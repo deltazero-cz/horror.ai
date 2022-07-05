@@ -35,12 +35,12 @@ const Home = () => {
     en: [
       'Putin Still Lives',
       'Ran out of Rum',
-      'Dead Cat'
+      'Dead Puppy'
     ],
     cs: [
       'Zeman stále žije',
-      'Usnula v Brně',
-      'Štěňátko',
+      'Usnula ve vlaku',
+      'Kuře na kari',
     ]
   }
 
@@ -66,7 +66,7 @@ const Home = () => {
       <section className='description'>
         <p>
           AI Horror Generator based on <a href='https://openai.com/' target='_blank'>OpenAI</a>'s DaVinci GPT-3,
-          creating short horror stories. Utilizing <a href='https://www.deepl.com/' target='_blank'>DeepL</a> to understand many languages.
+          thinking up short horror stories. Utilizing <a href='https://www.deepl.com/' target='_blank'>DeepL</a> to understand many languages.
         </p>
 
         <div className='sm:flex spacing-2 w-full'>

@@ -37,7 +37,7 @@ footer {
 
 .description { @apply text-sm text-neutral-400;
   p { @apply my-2 }
-  dd { @apply pl-2 }
+  dd { @apply pl-2 mt-0.5 }
   a { @apply transition-colors }
   a { @apply underline hover:no-underline hover:text-neutral-100 }
 }
