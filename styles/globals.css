@@ -1,3 +1,43 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+html { font-family: 'PT Mono', monospace }
+body { @apply bg-black text-gray-200 }
+h1 { @apply text-5xl }
+
+#__next {
+  @apply flex w-full min-h-screen flex-col items-center justify-center
+}
+
+main {
+  @apply w-full flex flex-1 flex-col items-center justify-center px-5;
+
+  h1 { @apply text-6xl text-red-700 mt-6; font-family: 'Griffy', monospace }
+
+  section { @apply w-full max-w-md; }
+
+  form { @apply mt-8 flex w-full;
+    input { @apply flex-1 inline-block bg-black border-2 border-neutral-600 outline-0 px-5 py-2 -mr-2 }
+    button[type=submit] { @apply text-2xl inline-block bg-neutral-600 outline-0 px-5 }
+  }
+  article { @apply w-full min-h-[240px] cursor-text py-3 px-5 bg-neutral-900 }
+
+  &.error {
+    form { @apply flex w-full;
+      input, button { @apply border-red-600 }
+      button { @apply bg-red-600 } }
+    article { @apply w-full bg-red-900 bg-opacity-30 border-red-700 }
+  }
+}
+
+footer {
+  @apply py-4 text-center !text-xs
+}
+
+.description { @apply text-sm text-neutral-400;
+  p { @apply my-2 }
+  dd { @apply pl-2 }
+  a { @apply transition-colors }
+  a { @apply underline hover:no-underline hover:text-neutral-100 }
+}
